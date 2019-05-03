@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+{# Como o header deve se repetir em várias paginas ele é criado
+   separadamente e incluido na linha abaixo #}
+  {% include "_partials/head.njk" %}
+<body>
+  <div class="main-wrapper">
+  {# Quem herdar este arquivo pode incluir conteúdo abaixo #}
+    {% block body %} {% endblock %}
+  </div>
+</body>
+</html>

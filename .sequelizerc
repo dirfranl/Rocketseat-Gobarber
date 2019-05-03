@@ -1,0 +1,16 @@
+/**
+ * Arquivo criado para informar ao sequelize a alteração das pastas.
+ * Neste projeto config foi para src/
+ * models foi para src/app/
+ * criamos a pasta database dentro de src e colocamos nela
+ * migrations e seeders
+ */
+
+ const path = require('path')
+
+ module.exports = {
+   config: path.resolve('src', 'config','database.js'),
+   'models-path': path.resolve('src', 'app','models'),
+   'seeders-path': path.resolve('src', 'database','seeders'),
+   'migrations-path': path.resolve('src', 'database','migrations'),
+ }
